@@ -1,67 +1,78 @@
+# AZ DevOps Pipeline
 # Create a CI/CD pipeline in Azure Pipelines for Node.js with Azure DevOps Starter
 
 In this quickstart, you create a NodeJS progressive web app (PWA) using [GatsbyJS](https://www.gatsbyjs.org/) and the simplified Azure DevOps Starter creation experience. When finished, you have a continuous integration (CI) and continuous delivery (CD) pipeline for your PWA in Azure Pipelines. Azure DevOps Starter sets up what you need for developing, deploying, and monitoring.
 
 ## Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio). 
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio).
 - An [Azure DevOps](https://azure.microsoft.com/services/devops/) organization.
 
 ## Sign in to the Azure portal
 
 DevOps Starter creates a CI/CD pipeline in Azure Pipelines. You can create a new Azure DevOps organization or use an existing organization. DevOps Starter also creates Azure resources in the Azure subscription of your choice.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), and in the left pane, select **Create a resource**. 
+1. Sign in to the [Azure portal](https://portal.azure.com), and in the left pane, select **Create a resource**.
 
-   ![Create an Azure resource in Azure portal](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/create-azure-resource.png)
+![](index/create-azure-resource.png)
+
 
 1. In the search box, type **DevOps Starter**, and then select. Click on **Add** to create a new one.
 
-    ![The DevOps Starter dashboard](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/search-devops-starter.png)
+![](index/search-devops-starter.png)
+
 
 ## Select a sample application and Azure service
 
-1. Select the Node.js sample application.   
+1. Select the Node.js sample application.
 
-    ![Select the Node.js sample](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/select-nodejs.png) 
+![](index/select-nodejs.png)
 
-1. The default sample framework is **Express.js**. Change the selection to **Simple Node.js App** and then select **Next**. 
 
-    ![Select the Simple Node.js App](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/select-nodejs-framework.png) 
+1. The default sample framework is **Express.js**. Change the selection to **Simple Node.js App** and then select **Next**.
+
+![](index/select-nodejs-framework.png)
+
 
 1. The deployment targets available in this step are dictated by the application framework selected in step 2. In this example, **Windows Web App** is the default deployment target. Leave **Web App for Containers** set and select **Next**.
 
-    ![Select the deployment target](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/select-web-server.png)
+![](index/select-web-server.png)
+
 
 ## Configure a project name and an Azure subscription
 
-1. In the final step of the DevOps Starter creation workflow, you assign a project name, select an Azure subscription, and select **Done**.  
+1. In the final step of the DevOps Starter creation workflow, you assign a project name, select an Azure subscription, and select **Done**.
 
-    ![Assign a project name and select a subscription](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/assign-project-name.png)
+![](index/assign-project-name.png)
 
-1. A summary page displays while your project is built and your application is deployed to Azure. After a brief period, a project is created in your [Azure DevOps organization](https://dev.azure.com/) that includes a git repo, a Kanban board, a deployment pipeline, test plans, and the artifacts required by your app.  
+
+1. A summary page displays while your project is built and your application is deployed to Azure. After a brief period, a project is created in your [Azure DevOps organization](https://dev.azure.com/) that includes a git repo, a Kanban board, a deployment pipeline, test plans, and the artifacts required by your app.
 
 ## Managing your project
 
 1. Navigate to **All Resources** and find your DevOps Starter. Select your **DevOps Starter**.
 
-    ![Azure DevOps Dashboard in Resource List](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/devops-starter-list.png)
+![](index/devops-starter-list.png)
+
 
 1. You are directed to a dashboard that provides visibility into your project homepage, code repository, the  CI/CD pipeline, and a link to your running app. Select the **Project Homepage** to view your application in **Azure DevOps** and, in another browser tab, select the **Application Endpoint** to view the live sample app. We change this sample later to use GatsbyJS generated PWA.
 
-    ![Azure DevOps Dashboard](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/devops-projects-dashboard.png) 
+![](index/devops-projects-dashboard.png)
+
 
 1. From your Azure DevOps project, you can invite team members to collaborate and establish a Kanban board to start tracking your work. For more information, see [here](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops).
 
-![Azure DevOps Overview](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/azure-devops-overview.png)
+![](index/azure-devops-overview.png)
+
 
 ## Clone the repo and install your Gatsby PWA
 
 DevOps Starter creates a git repository in Azure Repos or GitHub. This example has created an Azure Repo. The next step is to clone the repo and make changes.
 
-1. Select **Repos** from your **DevOps Project** and then click **Clone**.  There are various mechanisms to clone the git repo to your desktop.  Choose the one that fits your development experience.  
+1. Select **Repos** from your **DevOps Project** and then click **Clone**.  There are various mechanisms to clone the git repo to your desktop.  Choose the one that fits your development experience.
 
-    ![Clone the Repo](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/clone-the-repo.png)
+![](index/clone-the-repo.png)
+
 
 1. After the repo is cloned to your desktop, make some changes to the starter template. Start by installing the GatsbyJS CLI from your terminal.
 
@@ -77,9 +88,9 @@ DevOps Starter creates a git repository in Azure Repos or GitHub. This example h
     drwxr-xr-x    2 root     root          4096 Jul 19 05:06 ArmTemplates
     drwxr-xr-x    4 root     root          4096 Jul 19 05:06 Tests
     ```
-    
+
 1. We do not want all of the files in the Application folder because we are going to replace it with a Gatsby starter. Run the following commands, in sequence, to trim it down.
-    
+
     ```
     cp ./Application/Dockerfile .
     rm -rf Application
@@ -96,14 +107,14 @@ DevOps Starter creates a git repository in Azure Repos or GitHub. This example h
     >   gatsby-starter-blog
         (Use a different starter)
     ```
-    
+
 1. You now have a folder named `my-gatsby-project`. Rename it to `Application` and copy the `Dockerfile` into it.
-    
+
     ```
     mv my-gatsby-project Application
     mv Dockerfile Application
     ```
-    
+
 1. In your favorite editor, open the Dockerfile and change the first line from `FROM node:8` to `FROM node:12`. This change ensures that your container is using Node.js version 12.x instead of version 8.x. GatsbyJS requires more modern versions of Node.js.
 
 1. Next, open the package.json file in the Application folder and edit the [scripts field](https://docs.npmjs.com/files/package.json#scripts) to ensure that your development and production servers listen on all available network interfaces (for example, 0.0.0.0) and port 80. Without these settings, the container app service is unable to route traffic to your Node.js app running inside your container. The `scripts` field should resemble what is below. Specifically, you want to change the `develop`, `serve`, and `start` targets from their defaults.
@@ -119,24 +130,28 @@ DevOps Starter creates a git repository in Azure Repos or GitHub. This example h
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
       }
     ```
-    
+
 ## Edit Your CI/CD pipelines
 
 1. Before you commit the code in the previous section, make some changes to your build and release pipelines. Edit your 'Build Pipeline' and update the Node task to use Node.js version 12.x. Set the **Task version** field to 1.x and the **Version** field to 12.x.
 
-    ![Update Node.js to 12.x](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/build-pipeline-update-node.png)
+![](index/build-pipeline-update-node.png)
+
 
 1. In this quickstart, we are not creating unit tests and we are disabling those steps in our build pipeline. When you write tests, you can re-enable these steps. Right-click to select the tasks labeled **Install test dependencies** and **Run unit tests** and disable them.
 
-    ![Disable Build Tests](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/disable-build-unittests.png)
+
+![](index/disable-build-unittests.png)
 
 1. Edit your release pipeline.
 
-    ![Edit the Release Pipeline](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/edit-release-pipeline.png)
+![](index/edit-release-pipeline.png)
+
 
 1. As with the build pipeline, change the Node task to use 12.x and disable the two test tasks. Your release should resemble this screenshot.
 
-    ![Completed Release Pipeline](https://github.com/jruels/rapid-app/blob/master/labs/azdevops/_img/azure-devops-project-nodejs/release-pipeline-complete.png)
+
+![](index/release-pipeline-complete.png)
 
 ## Commit your changes and examine the Azure CI/CD pipeline
 
@@ -149,7 +164,7 @@ In the previous two steps, you added a Gatsby generated PWA to your git repo and
     git commit -m "My first Gatsby PWA"
     git push
     ```
-    
+
 1. A build is started as soon as `git push` completes. You can follow the progress from the **Azure DevOps Dashboard**.
 
 3. After a few minutes, your build and release pipelines should finish and your PWA should be deployed to a container. Click the **Application endpoint** link from the dashboard above and you should see a Gatsby starter project for blogs.
