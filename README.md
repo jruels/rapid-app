@@ -17,5 +17,5 @@ Lab 2: [Jenkins](labs/jenkins/)
 Lab 3: [Create Azure Kubernetes cluster](labs/001-setup-aks/)   
 Lab 4: [CICD Pipeline](labs/cicd-aks)   
 Lab 5: [Azure DevOps Pipeline](labs/azdevops)   
-Lab 6: [Integrate SonarQube with Azure DevOps Pipeline](labs/azdevops-sonarqube)   
+Lab 6: [Integrate SonarQube with Azure DevOps Pipelines](labs/azdevops-sonarqube)   
 
