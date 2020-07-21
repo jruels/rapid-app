@@ -44,11 +44,6 @@ Set an environment variable
 ACR=voting<your initials>
 ```
 
-Create a new resource group
-```console
-az group create --name voting --location westus
-```
-
 Create an Azure Container Registry for storing images.
 ```console
 az acr create -n $ACR -g voting --sku Standard
