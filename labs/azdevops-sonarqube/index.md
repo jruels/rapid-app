@@ -158,7 +158,7 @@ The link will open the **MyShuttle** project in the SonarQube Dashboard.  Under 
    |**Duplications**|The duplications decoration shows which parts of the source code are duplicated|
    |**Size**|Provides the count of lines of code within the project including the number of statements, Functions, Classes, Files and Directories|
 
-  {% include important.html content= "In this example, along with the bug count, a character **D** is displayed which is known as **Reliability Rating**. **D** indicates that there is **atleast 1 critical bug** in this code. For more information on Reliability Rating, click [here](https://docs.sonarqube.org/display/SONAR/Metric+Definitions#MetricDefinitions-Reliability)" %}
+  >In this example, along with the bug count, a character **D** is displayed which is known as **Reliability Rating**. **D** indicates that there is **atleast 1 critical bug** in this code. For more information on Reliability Rating, click [here](https://docs.sonarqube.org/display/SONAR/Metric+Definitions#MetricDefinitions-Reliability)
 
 1. Click on the **Bugs** count to see the details of the bug.
 
