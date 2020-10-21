@@ -7,9 +7,9 @@ This is the easiest method to setup Jenkins and is a recommended option.
 
 ### Installing Docker Engine
 
-Proceed with installing Docker Engine on your choice of Operating System. For details on how to install docker visit the official installation page at  [docs.docker.com](https://docs.docker.com/engine/installation/).
+We will be using Katacoda to run our Jenkins Docker container. 
 
-We assume you have installed docker and are ready to launch containers before proceeding. To validate docker environment run.
+Please find the lab infrastructure [here](https://www.katacoda.com/courses/docker/playground)
 
 ```
 docker ps
