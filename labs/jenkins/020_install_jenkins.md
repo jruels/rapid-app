@@ -5,12 +5,10 @@ Jenkins is a essential automation tool to setup Continuous Integration. Its the 
 ## Setting up Learning Environment with Docker
 This is the easiest method to setup Jenkins and is a recommended option.  
 
-### Installing Docker Engine
+## Confirm Environment
+This lab uses Docker to run a Jenkins container. 
 
-We will be using Katacoda to run our Jenkins Docker container. 
-
-Please find the lab infrastructure [here](https://www.katacoda.com/courses/docker/playground)
-
+Confirm Docker is installed.   
 ```
 docker ps
 ```
