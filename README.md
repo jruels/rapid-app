@@ -5,6 +5,7 @@ This site includes the slides and labs for the Rapid Application Deployment with
 
 ## Course Content   
 [Slides day 1](https://www.dropbox.com/s/lxk6nsoac0gehli/Rapid%20Application-day1.pptx?dl=0)   
+[Slides day 2](https://www.dropbox.com/s/wazfcwfexul8dk9/DevOps-day2.pdf?dl=0)   
 
 ## Labs   
 
