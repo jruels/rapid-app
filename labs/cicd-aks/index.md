@@ -91,7 +91,7 @@ az aks update -n myAKSCluster -g voting --attach-acr $ACR
 
 ## Deploy the sample application to AKS
 
-To deploy the sample application to your AKS cluster, you can use the Kubernetes manifest file in the root of the Azure vote repository repo. Open the *azure-vote-all-in-one-redis.yaml* manifest file with an editor such as `vi`. Replace `microsoft` with your ACR login server name. This value is found on line **57** of the manifest file:
+To deploy the sample application to your AKS cluster, you can use the Kubernetes manifest file in the root of the Azure vote repository repo. Open the *azure-vote-all-in-one-redis.yaml* manifest file with an editor such as `vi`. Replace `microsoft` with your ACR login server name. This value is found on line **60** of the manifest file:
 
 ```yaml
 containers:
