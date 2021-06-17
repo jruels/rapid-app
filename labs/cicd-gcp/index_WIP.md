@@ -1,23 +1,18 @@
-# Deploy from GitHub to Azure Kubernetes Service using Jenkins
+# Deploy from GitHub to Google Kubernetes Service using Jenkins
 
-This tutorial deploys a sample application from both GitHub to an 
-Azure Kubernetes Service (AKS) cluster by setting up continuous integration (CI) and 
-continuous deployment (CD) in Jenkins. That way, when you 
-update your app by pushing commits to GitHub, Jenkins 
-automatically runs a new container build, pushes container 
-images to Azure Container Registry (ACR), and then runs your app in AKS. 
+This tutorial deploys a sample application from GitHub to a Google Kubernetes Service (GKE) cluster by setting up continuous integration (CI) and continuous deployment (CD) in Jenkins. That way, when you update your app by pushing commits to GitHub, Jenkins automatically runs a new container build, pushes container images to Docker Registry, and then runs your app in GKE. 
 
 In this tutorial, you'll complete these tasks:
 
-  * Deploy a sample Azure vote app to an AKS cluster.
+  * Deploy a sample app to a GKE cluster.
   * Create a basic Jenkins project.
-  * Set up credentials for Jenkins to interact with ACR.
+  * Set up credentials for Jenkins to interact with GCP.
   * Create a Jenkins build job and GitHub webhook for automated builds.
-  * Test the CI/CD pipeline to update an application in AKS based on GitHub code commits.
+  * Test the CI/CD pipeline to update an application in GKE based on GitHub code commits.
 
 ## Prepare your app
 
-In this article, you use a sample Azure vote application that contains a web interface hosted in one or more pods, and a second pod hosting Redis for temporary data storage. Before you integrate Jenkins and AKS for automated deployments, first manually prepare and deploy the Azure vote application to your AKS cluster. This manual deployment is version one of the application, and lets you see the application in action.
+In this article, you use a sample application that contains a web interface hosted in one or more pods, and a second pod hosting Redis for temporary data storage. Before you integrate Jenkins and AKS for automated deployments, first manually prepare and deploy the Azure vote application to your AKS cluster. This manual deployment is version one of the application, and lets you see the application in action.
 
 Create a free GitHub account if you do not already have one.   
 https://github.com/join
@@ -139,7 +134,7 @@ This sample script is for demo purposes to quickly provision a Jenkins environme
 Run the following commands to download and run the script. 
 
 ```console
-curl  https://gist.githubusercontent.com/jruels/dd44923beb9e4111eb13ad4cd204b1d2/raw/aebe1f9a2a03dc402d139f149ba89eae78681d63/azure-jenkins-vm.sh> azure-jenkins.sh
+curl https://gist.githubusercontent.com/jruels/dd44923beb9e4111eb13ad4cd204b1d2/raw/2bb83570d4f26573d753d0d5d625acab25826ff8/azure-jenkins-vm.sh > azure-jenkins.sh
 sh azure-jenkins.sh
 ```
 
